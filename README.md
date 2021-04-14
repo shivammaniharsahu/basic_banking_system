@@ -29,7 +29,7 @@ A Web Application used to transfer money between multiple users (Project contain
 
 ---
 ## Website Pic
-![GitHub Logo](img/home.png)
+![GitHub Logo](markdown-demo/home.png)
 ## Technology stacks used in project: Web Technology
 *  Frontend
    * HTML
