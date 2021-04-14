@@ -5,14 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create User</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/table.css">
-    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    
     <link rel="stylesheet" type="text/css" href="css/createuser.css">
     
-<link  rel="stylesheet" type="text/css" href="css/navbar.css">
 </head>
-
-<body style="background-color: #e67e22">
+<body >
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.php">The Spark Bank</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+      <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.php">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="createuser.php">Create User</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="transfermoney.php">Transaction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="transactionhistory.php">Transaction History</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <?php
     include 'config.php';
@@ -31,70 +52,40 @@
     }
   }
 ?>
+ 
+<div  class="row">
+ <div  class="col sm-6 col md-6 col lg-6"></div>
 
-
-<div class="formDiv">
-        <h1 class="title">Create a User</h1>
-        <form action="login.html">
-            <div class="input-group">
+ <div  class="col sm-3 col md-3 col lg-3">
+  <div  class="formDiv" style="text-align:center">
+        <h1 class="title" style="
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;">Create a User</h1>
+        <form style="text-align:center" method="post" >
+            <div style="text-align:center" class="input-group">
                 <i class="fas fa-user"></i>
                 <input type="text" name="name" placeholder="Name" required>
             </div>
-            <div class="input-group">
+            <div style="text-align:center" class="input-group">
             <i class="fas fa-envelope"></i>
-                <input type="email" name="email" placeholder="Email" required>
+                <input style="width: 150px;" type="email" name="email" placeholder="Email" required>
             </div>
             
-            <div class="input-group">
+            <div style="justify-content:center" class="input-group">
             <i class="fas fa-money-check"></i>
                 <input type="number" name="balance" placeholder="Balance" required>
             </div>
             <button type="submit" value="CREATE" name="submit" class="btn">Create</button>
         </form>
     </div>
+   </div> 
+   <div class="col sm-3 col md-3 col lg-3"></div>
+</div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    
 <script src="https://kit.fontawesome.com/4077c6ef6a.js" crossorigin="anonymous"></script>
-<!-- 
-  <div class="background">
-  <div class="container">
-    <div class="screen">
-      <div class="screen-header">
-        <div class="screen-header-right">
-          <div class="screen-header-ellipsis"></div>
-          <div class="screen-header-ellipsis"></div>
-          <div class="screen-header-ellipsis"></div>
-        </div>
-      </div>
-      <div class="screen-body">
-        <div class="screen-body-item left">
-          <img class="img-fluid" src="img/user3.jpg" style="border: none; border-radius: 50%;">
-        </div>
-        <div class="screen-body-item">
-          <form class="app-form" method="post">
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="NAME" type="text" name="name" required>
-            </div>
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="EMAIL" type="email" name="email" required>
-            </div>
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="BALANCE" type="number" name="balance" required>
-            </div>
-            <br>
-            <div class="app-form-group button">
-              <input class="app-form-button" type="submit" value="CREATE" name="submit"></input>
-              <input class="app-form-button" type="reset" value="RESET" name="reset"></input>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
-<script type="text/javascript" src="js/navbar.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
