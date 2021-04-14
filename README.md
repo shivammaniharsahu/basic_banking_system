@@ -1,4 +1,4 @@
-# Banking_System
+# Basic_Banking_System
 
 ### Sparks Foundation Project : Basic Banking System
 A Web Application used to transfer money between multiple users (Project contains few dummy users). A dummy user can also be created.
@@ -29,7 +29,7 @@ A Web Application used to transfer money between multiple users (Project contain
 
 ---
 ## Website Pic
-![GitHub Logo](markdown-demo/home.png)
+![GitHub Logo](img/home.png)
 ## Technology stacks used in project: Web Technology
 *  Frontend
    * HTML
