@@ -3,7 +3,7 @@
 ### Sparks Foundation Project : Basic Banking System
 A Web Application used to transfer money between multiple users (Project contains few dummy users). A dummy user can also be created.
 
-#### Go to website: https://sparksbank2021.herokuapp.com/
+#### Go to website: http://spark-foundation.mywebcommunity.org/index.php
 
 ## Flow of the Website: 
 * Home Page -> View all Users -> Select and View one User -> Transfer Money -> Select reciever -> View all Users -> View Transfer History.
