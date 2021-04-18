@@ -6,17 +6,12 @@ if(isset($_POST['submit']))
     $from = $_GET['id'];
     $to = $_POST['to'];
     $amount = $_POST['amount'];
-
     $sql = "SELECT * from users where id=$from";
     $query = mysqli_query($conn,$sql);
     $sql1 = mysqli_fetch_array($query); // returns array or output of user from which the amount is to be transferred.
-
     $sql = "SELECT * from users where id=$to";
     $query = mysqli_query($conn,$sql);
     $sql2 = mysqli_fetch_array($query);
-
-
-
     // constraint to check input of negative value by user
     if (($amount)<0)
    {
@@ -25,8 +20,6 @@ if(isset($_POST['submit']))
         echo '</script>';
     }
 
-
-  
     // constraint to check insufficient balance.
     else if($amount > $sql1['balance']) 
     {
@@ -36,8 +29,6 @@ if(isset($_POST['submit']))
         echo '</script>';
     }
     
-
-
     // constraint to check zero values
     else if($amount == 0){
 
@@ -45,7 +36,6 @@ if(isset($_POST['submit']))
          echo "alert('Oops! Zero value cannot be transferred')";
          echo "</script>";
      }
-
 
     else {
         
@@ -93,6 +83,7 @@ if(isset($_POST['submit']))
     <link rel="stylesheet" type="text/css" href="css/table.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" type="text/css" href="css/bg.css">
     <style type="text/css">
     	button{
         height:60px;
@@ -127,10 +118,13 @@ if(isset($_POST['submit']))
     </style>
 </head>
 
-<body style="background-color:#2bcc9c">
+<body>
  
 <!-- navbar -->
   
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
 
 <div class="topnav" id="myTopnav">
   <a href="index.php" style="text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;"  class="active">The Spark Bank</a>
